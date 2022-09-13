@@ -13,9 +13,9 @@
         <nav class="navbar">
             <div class="div1">
                 <ul class="navigation">
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">BAND</a></li>
-                    <li><a href="#">TOUR</a></li>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#band">BAND</a></li>
+                    <li><a href="#tour">TOUR</a></li>
                     <li><a href="#">CONTACT</a></li>
                     <li><a href="#">MORE<i class="fa-solid fa-caret-down"></i></a>
                         <ul>
@@ -36,13 +36,97 @@
         </nav>
         
         <!-- Banner image  -->
-        <div class="banner-image">
+        <div id="home" class="banner-image">
             <div class="image">
                 <img src="./image/bandTemplate.jpg" alt="banner image">
             </div>
             <div class="content">
-                <h2>New York</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <h2 class="text">New York</h2>
+                <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+        </div>
+
+        <!-- Band  -->
+        <div id="band" class="band">
+            <div class="band-content">
+                <h1>THE BAND</h1>
+                <p class="music" style="color: #000;">We love music</p>
+                <p style="color: #000;">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>            
+        </div>
+        <div class="row">
+            <div class="col">
+                <p style="color: #000;">Name</p>
+                <img src="./image/boyImage.jpg" alt="boy image">
+            </div>
+            <div class="col">
+                <p style="color: #000;">Name</p>
+                <img src="./image/boyImage.jpg" alt="boy image">
+            </div>
+            <div class="col">
+                <p style="color: #000;">Name</p>
+                <img src="./image/boyImage.jpg" alt="boy image">
+            </div>
+        </div>
+
+        <!-- Tour  -->
+        <div id="tour" class="tour" style="padding: 2rem 0rem;">
+            <div class="tour-text">
+                <h1>TOUR DATES</h1>
+                <p style="font-style: italic">Remember to book your tickets!</p>
+            </div>
+            <div class="tour-month">
+                <span>September</span>
+                <span class="sold-out">Sold out</span><hr>
+                <span>October</span>
+                <span class="sold-out">Sold out</span><hr>
+                <div class="november">
+                    <span>Novermber</span>
+                    <span class="three">3</span>
+                </div>
+            </div>
+            <div class="tour-ticket" style="margin-top: 2rem;">
+                <div class="row">
+                    <div class="col">
+                        <img src="./image/newYork.jpg" alt="new york image">
+                        <h4>New York</h4>
+                        <p>13 September 2022</p>
+                        <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                        <a href="#">Buy Tickets</a>
+                    </div>
+                    <div class="col">
+                        <img src="./image/paris.jpg" alt="new york image">
+                        <h4>Paris</h4>
+                        <p>13 September 2022</p>
+                        <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                        <a href="#">Buy Tickets</a>
+                    </div>
+                    <div class="col">
+                        <img src="./image/sanFran.jpg" alt="new york image">
+                        <h4>San Fran</h4>
+                        <p>13 September 2022</p>
+                        <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                        <a href="#">Buy Tickets</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact  -->
+        <div class="contact">
+            <div class="contact-text">
+                <h1>CONTACT</h1>
+                <p>Fan? Drop a note!</p>
+            </div>
+        </div>
+        <div class="contact-info">
+            <div class="address">
+                <p><i class="fa-solid fa-location-dot"></i> Chicago, US</p>
+                <i class="fa-solid fa-phone"></i> Phone: +88 01750 <br>
+                <i class="fa-solid fa-envelope"></i> Email: example@gmail.com
+            </div>
+            <div class="form">
+                <i class="fa-duotone fa-envelope"></i><i class="fa-thin fa-envelope"></i><i class="fa-regular fa-envelope"></i>
             </div>
         </div>
     </body>

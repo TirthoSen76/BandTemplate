@@ -87,12 +87,185 @@ ul li:hover ul {
     transform: translate(-50%);
     padding: 2rem;
 }
-.banner-image .content h2,p {
+.banner-image .content .text {
     color: #fff;
     text-align: center;
     padding: 1rem;
     font-weight: normal;
 }
+
+
+/* Band  */
+.band {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.band .band-content {
+    /* background-color: lightblue; */
+    width: 100%;
+    max-width: 60%;
+    padding: 3rem 1rem;
+}
+.band .band-content h1 {
+    text-align: center;
+    font-weight: normal;
+    padding: 1rem 0rem .5rem 0rem;
+}
+.band .band-content .music {
+    text-align: center;
+    font-style: italic;
+    padding: 1rem 0rem;
+}
+.band .band-content p {
+    text-align: justify;
+}
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.row .col {
+    /* border: 1px solid #ddd; */
+    margin: .5rem 2rem;
+    padding: .5rem;
+    width: 13%;
+}
+.row .col p {
+    text-align: center;
+    padding: 1rem;
+}
+.row .col img {
+    width: 100%;
+    border-radius: .25rem;
+}
+
+
+/* Tour  */
+.tour {
+    background-color: #000;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    padding: 4rem .2rem;
+}
+.tour .tour-text h1,p {
+    color: #fff;
+    font-weight: normal;
+    text-align: center;
+    padding: .5rem;
+}
+.tour .tour-month {
+    background-color: #fff;
+    width: 55%;
+    margin: auto;
+}
+.tour .tour-month span {
+    padding: .75rem;
+    display: inline-block;
+}
+.tour .tour-month .sold-out {
+    color: #fff;
+    background-color: orangered;    
+    padding: .2rem;
+}
+.tour .tour-month .november {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.tour .tour-month .november .three {
+    color: #fff;
+    background-color: #000;
+    margin-right: 1rem;
+    margin-top: .4rem;
+    border-radius: 50%;
+    height: 2.2rem;
+    width: 2rem;
+}
+.tour .tour-ticket {
+    /* background-color: aquamarine; */
+    margin: 2rem 0rem;
+    width: 55%;
+    padding: 0rem;
+}
+.tour .tour-ticket .row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between
+}
+.tour .tour-ticket .row .col {
+    width: 32%;
+    margin: 0rem;
+    background-color: #fff;
+    padding: 0rem 0rem 1rem 0rem;
+    border: none;
+}
+.tour .tour-ticket .row .col img {
+    border-radius: 0rem;
+    height: 50%;
+    width: 100%;
+}
+.tour .tour-ticket .row .col img:hover {
+    opacity: .75;
+}
+.tour .tour-ticket .row .col h4 {
+    padding: .5rem .75rem;
+}
+.tour .tour-ticket .row .col p {
+    color: #000;
+    padding: .5rem .75rem;
+    text-align: left;
+}
+.tour .tour-ticket .row .col a {
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    padding: .5rem;
+    display: inline-block;
+    margin-left: .75rem;
+    
+}
+.tour .tour-ticket .row .col a:hover {
+    color: #fff;
+    background-color: gray;
+}
+
+
+/* Contact  */
+.contact {
+    padding: 5rem 0rem;
+}
+.contact h1 {
+    color: #000;
+    font-weight: normal;
+    text-align: center;
+    letter-spacing: .21rem;
+}
+.contact p {
+    color: rgb(119, 110, 110);
+    font-style: italic;
+    padding: 1.5rem 0rem;
+}
+.contact-info {
+    background-color: salmon;
+    width: 65%;
+    margin: auto;
+    padding: 1rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin-bottom: 5rem;
+}
+.contact-info .address {
+    background-color: slateblue;
+}
+.contact-info .form {
+    background-color: darkred;
+}
+
+
+
 
 /* Responsive  */
 @media screen and (max-width: 992px) {
@@ -122,5 +295,68 @@ ul li:hover ul {
     }
     .banner-image .content {
         display: none;
+    }
+    .band .band-content {
+        max-width: 100%;
+        padding: 1rem;
+    }
+    .row {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-content: center;
+    }
+    .row .col {
+        width: 60%;
+    }
+    .tour .tour-month {
+        background-color: #fff;
+        width: 90%;
+        margin: auto;
+    }
+    .tour .tour-month {
+        background-color: #fff;
+        width: 90;
+        margin: auto;
+    }
+    .tour .tour-ticket {
+        /* background-color: lightsalmon; */
+        /* margin: 7rem 0rem; */
+        width: 90%;
+        padding: 0rem;
+        margin: auto;
+    }
+    .tour .tour-ticket .row {
+        display: flex;
+        flex-flow: column wrap;
+        /* justify-content: space-between; */
+        align-items: center;
+    }
+    .tour .tour-ticket .row .col {
+        width: 80%;
+        margin: .5rem;
+        background-color: #fff;
+        padding: 0rem 0rem 1rem 0rem;
+        border: none;
+    }
+    .contact-info {
+        background-color: salmon;
+        width: 80%;
+        padding: 1rem 0rem;
+        flex-flow: column wrap;
+        justify-content: space-evenly;
+        /* align-content: center; */
+    }
+}
+
+@media screen and (max-width: 668px) {
+    .row .col {
+        width: 90%;
+    }
+    .tour {
+        padding: 0rem;
+    }
+    .tour .tour-ticket .row .col {
+        width: 100%;
     }
 }
