@@ -72,6 +72,7 @@ ul li:hover ul {
     left: 0rem;
 }
 
+
 /* Banner image   */
 .banner-image {
     position: relative;
@@ -102,7 +103,6 @@ ul li:hover ul {
     justify-content: center;
 }
 .band .band-content {
-    /* background-color: lightblue; */
     width: 100%;
     max-width: 60%;
     padding: 3rem 1rem;
@@ -126,7 +126,6 @@ ul li:hover ul {
     justify-content: center;
 }
 .row .col {
-    /* border: 1px solid #ddd; */
     margin: .5rem 2rem;
     padding: .5rem;
     width: 13%;
@@ -184,7 +183,6 @@ ul li:hover ul {
     width: 2rem;
 }
 .tour .tour-ticket {
-    /* background-color: aquamarine; */
     margin: 2rem 0rem;
     width: 55%;
     padding: 0rem;
@@ -248,23 +246,94 @@ ul li:hover ul {
     padding: 1.5rem 0rem;
 }
 .contact-info {
-    background-color: salmon;
     width: 65%;
     margin: auto;
     padding: 1rem;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
-    margin-bottom: 5rem;
+    justify-content: space-between;
+    margin-bottom: 10rem;
+}
+.contact-info p {
+    color: #000;
+    padding: .35rem;
+    text-align: left;
+}
+.contact-info p i {
+    padding: 0rem .5rem;
 }
 .contact-info .address {
-    background-color: slateblue;
+    flex-basis: 50%;
+    margin: 1rem 0rem;
 }
 .contact-info .form {
-    background-color: darkred;
+    flex-basis: 50%;
+}
+.contact-info .form input[type=text] {
+    border: 1px solid #ddd;
+    padding: .75rem .5rem;
+    margin: .25em;
+    width: 46%;
+}
+.contact-info .form form .message {
+    width: 95.3%;
+}
+.contact-info .form input[type=text]::placeholder {
+    font-size: 1rem;
+}
+.contact-info .form input[type=text]:focus {
+    outline: none;
+}
+.contact-info .form input[type=submit] {
+    border: none;
+    color: #fff;
+    margin: .25em;
+    background: #000;
+    padding: .75rem 1rem;
+    cursor: pointer;
 }
 
 
+/* More  */
+.more {
+    width: 100%;
+
+}
+.more img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* Social icon  */
+.icon {
+    background-color: #f1f1f1;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 5rem 0rem 1rem 0rem;
+}
+.icon i {
+    font-size: 1.2rem;
+}
+.icon i:hover {
+    color: #888;
+}
+
+
+/* Footer  */
+.footer {
+    text-align: center;
+    background-color: #f1f1f1;
+    padding: 0rem 0rem 2rem 0rem;
+}
+.footer a {
+    color: #000;
+    text-decoration: none;
+}
+.footer a:hover {
+    color: #008080;
+}
 
 
 /* Responsive  */
@@ -320,8 +389,6 @@ ul li:hover ul {
         margin: auto;
     }
     .tour .tour-ticket {
-        /* background-color: lightsalmon; */
-        /* margin: 7rem 0rem; */
         width: 90%;
         padding: 0rem;
         margin: auto;
@@ -329,7 +396,6 @@ ul li:hover ul {
     .tour .tour-ticket .row {
         display: flex;
         flex-flow: column wrap;
-        /* justify-content: space-between; */
         align-items: center;
     }
     .tour .tour-ticket .row .col {
@@ -340,12 +406,26 @@ ul li:hover ul {
         border: none;
     }
     .contact-info {
-        background-color: salmon;
         width: 80%;
         padding: 1rem 0rem;
         flex-flow: column wrap;
         justify-content: space-evenly;
-        /* align-content: center; */
+        margin-bottom: 5rem;
+    }
+    .contact-info .form input[type=text] {
+        border: 1px solid #ddd;
+        padding: .75rem .5rem;
+        margin: .25em 0rem;
+        width: 100%;
+    }
+    .contact-info .form form .message {
+        width: 100%;
+    }
+    .contact {
+        padding: 2rem 0rem;
+    }
+    .contact-info {
+        padding: .1rem;
     }
 }
 
@@ -358,5 +438,16 @@ ul li:hover ul {
     }
     .tour .tour-ticket .row .col {
         width: 100%;
+    }
+    .contact-info {
+        width: 95%;
+        padding: 1rem 0rem;
+        flex-flow: column wrap;
+        justify-content: space-evenly;
+    }
+    .contact-info p {
+        color: #000;
+        padding: .35rem;
+        text-align: left;
     }
 }

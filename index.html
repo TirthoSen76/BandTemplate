@@ -16,8 +16,8 @@
                     <li><a href="#home">HOME</a></li>
                     <li><a href="#band">BAND</a></li>
                     <li><a href="#tour">TOUR</a></li>
-                    <li><a href="#">CONTACT</a></li>
-                    <li><a href="#">MORE<i class="fa-solid fa-caret-down"></i></a>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <li><a href="#more">MORE<i class="fa-solid fa-caret-down"></i></a>
                         <ul>
                             <li><a href="#">Mercendise</a></li>
                             <li><a href="#">Extra</a></li>
@@ -72,8 +72,8 @@
         <!-- Tour  -->
         <div id="tour" class="tour" style="padding: 2rem 0rem;">
             <div class="tour-text">
-                <h1>TOUR DATES</h1>
-                <p style="font-style: italic">Remember to book your tickets!</p>
+                <h1>TOUR DATES</h1><br>
+                <p style="font-style: italic">Remember to book your tickets!</p><br><br>
             </div>
             <div class="tour-month">
                 <span>September</span>
@@ -113,7 +113,7 @@
         </div>
 
         <!-- Contact  -->
-        <div class="contact">
+        <div id="contact" class="contact">
             <div class="contact-text">
                 <h1>CONTACT</h1>
                 <p>Fan? Drop a note!</p>
@@ -121,13 +121,40 @@
         </div>
         <div class="contact-info">
             <div class="address">
-                <p><i class="fa-solid fa-location-dot"></i> Chicago, US</p>
-                <i class="fa-solid fa-phone"></i> Phone: +88 01750 <br>
-                <i class="fa-solid fa-envelope"></i> Email: example@gmail.com
+                <p><i class="fa-solid fa-location-dot"></i> <span style="margin-left: .2em">Chicago, US</span> </p>
+                <p><i class="fa-solid fa-phone"></i> Phone: +88 01750 </p>
+                <p><i class="fa-solid fa-envelope"></i> Email: example@gmail.com </p>
             </div>
-            <div class="form">
-                <i class="fa-duotone fa-envelope"></i><i class="fa-thin fa-envelope"></i><i class="fa-regular fa-envelope"></i>
+            <div class="form">                
+                <form>
+                    <input class="name" type="text" placeholder="Name">
+                    <input class="email" type="text" placeholder="Email">
+                    <input class="message" type="text" placeholder="Message"> <br>
+                    <input type="submit" value="SEND">
+                </form>
             </div>
         </div>
+
+        <!-- More  -->
+        <div class="more" id="more">
+            <img src="/image/map.jpg" alt="map image">
+        </div>
+
+        <!-- Social icon  -->
+        <div class="icon">
+            <div class="social-icon">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-brands fa-pinterest"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+        </div>
+        
+        <!-- Footer  -->
+        <footer class="footer">
+            <small>All Rights Reserved by &copy <a href="#">Band Template</a></small>
+        </footer>
     </body>
 </html>
